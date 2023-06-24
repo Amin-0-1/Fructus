@@ -11,6 +11,10 @@
 		279BB7662A46714500A4D313 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BB7652A46714500A4D313 /* ContentView.swift */; };
 		279BB7682A46714600A4D313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279BB7672A46714600A4D313 /* Assets.xcassets */; };
 		279BB76B2A46714600A4D313 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279BB76A2A46714600A4D313 /* Preview Assets.xcassets */; };
+		279BB7742A467D4A00A4D313 /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BB7732A467D4A00A4D313 /* FruitCardView.swift */; };
+		279BB7772A4680EE00A4D313 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BB7762A4680EE00A4D313 /* ColorExtension.swift */; };
+		279BB7792A4683A200A4D313 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BB7782A4683A200A4D313 /* StartButtonView.swift */; };
+		279BB77B2A468AD000A4D313 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279BB77A2A468AD000A4D313 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		279BB7652A46714500A4D313 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		279BB7672A46714600A4D313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279BB76A2A46714600A4D313 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		279BB7732A467D4A00A4D313 /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		279BB7762A4680EE00A4D313 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		279BB7782A4683A200A4D313 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		279BB77A2A468AD000A4D313 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				279BB7632A46714500A4D313 /* FructusApp.swift */,
-				279BB7652A46714500A4D313 /* ContentView.swift */,
+				279BB7752A4680DC00A4D313 /* Utility */,
+				279BB7712A467C0000A4D313 /* Screen */,
+				279BB7722A467D2500A4D313 /* View */,
 				279BB7672A46714600A4D313 /* Assets.xcassets */,
 				279BB7692A46714600A4D313 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				279BB76A2A46714600A4D313 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		279BB7712A467C0000A4D313 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				279BB7652A46714500A4D313 /* ContentView.swift */,
+				279BB77A2A468AD000A4D313 /* OnboardingView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		279BB7722A467D2500A4D313 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				279BB7732A467D4A00A4D313 /* FruitCardView.swift */,
+				279BB7782A4683A200A4D313 /* StartButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		279BB7752A4680DC00A4D313 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				279BB7762A4680EE00A4D313 /* ColorExtension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279BB7742A467D4A00A4D313 /* FruitCardView.swift in Sources */,
 				279BB7662A46714500A4D313 /* ContentView.swift in Sources */,
 				279BB7642A46714500A4D313 /* FructusApp.swift in Sources */,
+				279BB77B2A468AD000A4D313 /* OnboardingView.swift in Sources */,
+				279BB7792A4683A200A4D313 /* StartButtonView.swift in Sources */,
+				279BB7772A4680EE00A4D313 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
