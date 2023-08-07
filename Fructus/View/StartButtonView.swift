@@ -9,10 +9,11 @@ import SwiftUI
 
 struct StartButtonView: View {
     // MARK: - PROPERTIES
+    @AppStorage("isOnboarding") var isOnboarding:Bool?
     // MARK: - BODY
     var body: some  View {
         Button {
-            print("exit the onboarding")
+            isOnboarding = false
         } label: {
             HStack(spacing: 8) {
                 Text("Start")
@@ -31,7 +32,12 @@ struct StartButtonView: View {
 
 struct StartButtonView_Previews: PreviewProvider {
     static var previews: some View {
+        
         StartButtonView()
             .previewLayout(.sizeThatFits)
+            .background{
+                Color.black
+            }
+            
     }
 }
