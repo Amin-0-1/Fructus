@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @State private var isShowingSettings = false
     var fruits: [Fruit] = fruitsData
     var body: some View {
         NavigationView {
@@ -24,6 +24,17 @@ struct ContentView: View {
             }
             
             .navigationTitle("Fruits")
+            .toolbar {
+                Button {
+                    isShowingSettings = true
+                } label: {
+                    Image(systemName: "slider.horizontal.3")
+                }
+
+            }
+            .sheet(isPresented: $isShowingSettings) {
+                SettingsView()
+            }
         }//:Navigation
     }
 }
@@ -31,5 +42,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(fruits: fruitsData)
+            .preferredColorScheme(.dark)
     }
 }
