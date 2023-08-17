@@ -30,14 +30,18 @@ struct SettingsView: View {
                     }
 
                     // MARK: - Section 2
-                    
+                     
 
                     
                     // MARK: - Section 3
-                    
                     GroupBox {
-                        Divider().padding(.vertical,4)
-                        
+                        SettingsRowView(name: "Developer", content: "John/Jane")
+                        SettingsRowView(name: "Designer", content: "Rebert Patras")
+                        SettingsRowView(name: "Compatibility",content: "iOS 15")
+                        SettingsRowView(name: "Website", linkLabel: "SwiftUI Masterclass", linkDestination: "swiftuimasterclass.com")
+                        SettingsRowView(name: "twitter",linkLabel: "RoberPatras",linkDestination:"twitter.com/ropertpatras")
+                        SettingsRowView(name: "SwiftUI",content: "2.0")
+                        SettingsRowView(name: "Version",content: "1.1.0")
                     } label: {
                         SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
                     }
