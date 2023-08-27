@@ -11,4 +11,4 @@
 * create an outstanding Settings view
 * add Icons to the App
 
-![](Fructus.gif)
+![](fructos.gif)
